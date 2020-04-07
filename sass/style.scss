@@ -1,0 +1,51 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #b2bec3;
+}
+.container {
+    max-width: 1140 px;
+    text-align: center;
+    min-height: 100px;
+    margin: 0;
+}
+.slash {
+    background-image: url(../images/cube.jpg);
+    background-attachment: fixed;
+    background-position: bottom;
+    object-fit: fill;
+    height: 150px;
+    color: white;
+    padding: 25px 200px;
+    .top {
+       background-color: rgba($color: #e74c3c, $alpha: 0.4);
+        height: 100px;
+        text-align: center;
+        h1 {
+            text-decoration: underline;
+        }
+        p {
+            font-style: italic;
+        }
+    }
+}
+.game {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    .description {
+        flex: 1;
+        text-align: left;
+    }
+    .butt {
+        flex: 1;
+        padding-top: 20px;
+        button {
+            background-color:#eb2f06;
+            margin: 0 10px;
+            width: 90px;
+            height: 40px;
+            border-radius: 30px
+        }
+    }
+
+}

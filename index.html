@@ -3,17 +3,38 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Kamień, papier, nożyce</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap&subset=latin-ext" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<div class="container">
-		<div id="buttons">
-			<button id="play-rock">Kamień</button>
-			<button id="play-paper">Papier</button>
-			<button id="play-scissors">Nożyce</button>
-		</div>
-		<div id="messages"></div>
+	<div class="slash">
+		<div class="top">
+			<h1>Zagraj w kamień, papier i nożyce!</h1>
+			<p>Cześć miło nam Ciebie powitać w naszej grze! Zagraj w jedną z najstarszych gier :)</p>
+		</div>	
 	</div>
+	<section>
+		<div class="container">
+			<div class="game">
+			<div class="description">
+				<h3>Instrukcja gry:</h3>
+				<ol>
+					<li>Naciśnij guzik poniżej z napisem: kamień, papier lub nożyce.</li>
+					<li>Po kliknięciu pojawi się wynik Twój i komputera.</li>
+					<li>Ruch komputera jest wybierany losowo.</li>
+				</ol>
+			</div>
+			<div class="butt">
+				<div id="buttons">
+					<button id="play-rock">Kamień</button>
+					<button id="play-paper">Papier</button>
+					<button id="play-scissors">Nożyce</button>
+				</div>
+				<div id="messages"></div>
+				<div id="result"></div>
+			</div>
+		</div>
+	</section>
 	<script src="js/functions.js"></script>
 	<script src="js/script.js"></script>
 </body>
