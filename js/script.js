@@ -1,5 +1,5 @@
 { 
- const playGame = (playerInput) => {
+  const playGame = (playerInput) => {
     //Ruch Komputera
     let randomNumber = Math.floor(Math.random() * 3 + 1);
 
@@ -9,7 +9,6 @@
 
     printMessage('Ruch komputera to: ' + computerMove);
     //Ruch gracza
-    /*let playerInput = prompt('Wybierz swój ruch! 1: kamień, 2: papier, 3: nożyce.');*/
 
     console.log('Gracz wpisał: ' + playerInput);
 
@@ -36,31 +35,31 @@
     if (argcomputerMove === 'kamień' && argplayerMove === 'papier') {
       printMessage('Ty wygrywasz!');
       return 'Ty wygrywasz!';
-    }else if (argcomputerMove === 'kamień' && argplayerMove === 'nożyce') {
+    } else if (argcomputerMove === 'kamień' && argplayerMove === 'nożyce') {
       printMessage('Ty przegrywasz!');
       return 'Ty przegrywasz!';
-    }else if (argcomputerMove === 'kamień' && argplayerMove === 'kamień') {
+    } else if (argcomputerMove === 'kamień' && argplayerMove === 'kamień') {
       printMessage('Remis!');
       return 'Remis!';
-    }else if (argcomputerMove === 'papier' && argplayerMove === 'papier') {
+    } else if (argcomputerMove === 'papier' && argplayerMove === 'papier') {
       printMessage('Remis!');
       return 'Remis!';
-    }else if (argcomputerMove === 'papier' && argplayerMove === 'nożyce') {
+    } else if (argcomputerMove === 'papier' && argplayerMove === 'nożyce') {
       printMessage('Ty wygrywasz!');
       return 'Ty wygrywasz!';
-    }else if (argcomputerMove === 'papier' && argplayerMove === 'kamień') {
+    } else if (argcomputerMove === 'papier' && argplayerMove === 'kamień') {
       printMessage('Ty przegrywasz!');
       return 'Ty przegrywasz!';
-    }else if (argcomputerMove === 'nożyce' && argplayerMove === 'papier') {
+    } else if (argcomputerMove === 'nożyce' && argplayerMove === 'papier') {
       printMessage('Ty przegrywasz!');
        return 'Ty przegrywasz!';
-    }else if (argcomputerMove === 'nożyce' && argplayerMove === 'nożyce') {
+    } else if (argcomputerMove === 'nożyce' && argplayerMove === 'nożyce') {
       printMessage('Remis!');
       return 'Remis!';
-    }else if (argcomputerMove === 'nożyce' && argplayerMove === 'kamień') {
+    } else if (argcomputerMove === 'nożyce' && argplayerMove === 'kamień') {
       printMessage('Ty wygrywasz!');
       return 'Ty wygrywasz!';
-    }else {
+    } else {
       printMessage('Błąd! wpisana zła liczba');
       return 'Błąd! wpisana zła liczba';
     }
